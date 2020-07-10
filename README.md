@@ -1,37 +1,74 @@
-## Welcome to GitHub Pages
+## What are extensions?
 
-You can use the [editor on GitHub](https://github.com/pashupati123/chrome-extention/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Extensions are small software programs that customize the browsing experience. They enable users to tailor Chrome functionality and behavior to individual needs or preferences. They are built on web technologies such as HTML, JavaScript, and CSS.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Step1
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+create a new directory to store the extension's files. 
+Next, add a file called manifest.json, Every app needs a manifest—a JSON-formatted file named manifest.json that describes the app and include the following code:
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+{
+  "name": "Hello Extensions",
+  "description" : "Base Level Extension",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "manifest_version": 2,
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens hello.html"
+    }
+  }
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Step2
 
-### Jekyll Themes
+Get image for your app icon and save in same directory and then create a file titled hello.html:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pashupati123/chrome-extention/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```markdown
+ <html>
+    <body>
+      <h1>Hello Extensions</h1>
+    </body>
+  </html>
+```
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Step3
+
+install the extension on your local machine.
+
+```markdown
+1.Navigate to chrome://extensions in your browser. You can also access this page by clicking on the Chrome menu on the top right side of the Omnibox, hovering over More Tools and selecting Extensions.
+
+2.Check the box next to Developer Mode.
+
+3.Click Load Unpacked Extension and select the directory for your "Hello Extensions" extension.
+```
+Congratulations! You can now launch your popup-based extension by clicking the app icon or by pressing Ctrl+Shift+F on your keyboard.
+
+
+
+### Step4 
+
+Web Store Hosting.
+
+```markdown
+1. All extensions are distributed to users as a special ZIP file with a .crx suffix. Extensions hosted in the Chrome Web Store are uploaded through the Developer Dashboard as .zip files. The publishing process automatically converts the .zip into a .crx file.
+
+2. There are three exceptions to the Chrome Web Store hosting rule:
+
+      1.Extensions that are distributed through the enterprise [policy]:https://support.google.com/chrome/a/answer/187948?visit_id=637299895767385038-1232552248&rd=1 
+      2.Unpacked extension directories from a local machine while in [developer mode]:https://developer.chrome.com/extensions/getstarted#unpacked
+      3.[Linux installation]:https://developer.chrome.com/extensions/linux_hosting
+```
+
+
