@@ -1,3 +1,5 @@
+## Develop and Host Chrome Extension in 4 Steps.
+
 ## What are extensions?
 
 Extensions are small software programs that customize the browsing experience. They enable users to tailor Chrome functionality and behavior to individual needs or preferences. They are built on web technologies such as HTML, JavaScript, and CSS.
@@ -5,7 +7,7 @@ Extensions are small software programs that customize the browsing experience. T
 ### Step1
 
 create a new directory to store the extension's files. 
-Next, add a file called manifest.json, Every app needs a manifest—a JSON-formatted file named manifest.json that describes the app and include the following code:
+Next, add a file called manifest.json, Every app needs a manifest, JSON-formatted file named manifest.json that describes the app and include the following code:
 
 ```markdown
 {
@@ -64,11 +66,12 @@ Web Store Hosting.
 ```markdown
 1. All extensions are distributed to users as a special ZIP file with a .crx suffix. Extensions hosted in the Chrome Web Store are uploaded through the Developer Dashboard as .zip files. The publishing process automatically converts the .zip into a .crx file.
 
-2. There are three exceptions to the Chrome Web Store hosting rule:
+2.There are three exceptions to the Chrome Web Store hosting rule:
 
-      1.Extensions that are distributed through the enterprise [policy]:https://support.google.com/chrome/a/answer/187948?visit_id=637299895767385038-1232552248&rd=1 
-      2.Unpacked extension directories from a local machine while in [developer mode]:https://developer.chrome.com/extensions/getstarted#unpacked
-      3.[Linux installation]:https://developer.chrome.com/extensions/linux_hosting
+2.1 [Extensions that are distributed through the enterprise policy](https://support.google.com/chrome/a/answer/187948?visit_id=637299903277586562-2444179625&rd=1)
+2.2 [Unpacked extension directories from a local machine while in developer mode](https://developer.chrome.com/extensions/getstarted#unpacked)
+2.3 [Linux installation](https://developer.chrome.com/extensions/linux_hosting)
+
 ```
 
 
