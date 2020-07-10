@@ -71,5 +71,5 @@ Web Store Hosting.
   2. [Unpacked extension directories from a local machine while in developer mode](https://developer.chrome.com/extensions/getstarted#unpacked).
   3. [Linux installation](https://developer.chrome.com/extensions/linux_hosting).
 
-
+### Download Sample code extensions file from [here](https://github.com/pashupati123/chrome-extention) named as myfirst-extension folder.
 
