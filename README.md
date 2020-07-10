@@ -66,9 +66,9 @@ Web Store Hosting.
 1. All extensions are distributed to users as a special ZIP file with a .crx suffix. Extensions hosted in the Chrome Web Store are uploaded through the Developer Dashboard as .zip files. The publishing process automatically converts the .zip into a .crx file.
 
 2.There are three exceptions to the Chrome Web Store hosting rule:
-- List
-2.1 [Extensions that are distributed through the enterprise policy](https://support.google.com/chrome/a/answer/187948?visit_id=637299903277586562-2444179625&rd=1).
-2.2 [Unpacked extension directories from a local machine while in developer mode](https://developer.chrome.com/extensions/getstarted#unpacked).
+
+2.1 [Extensions that are distributed through the enterprise policy](https://support.google.com/chrome/a/answer/187948?visit_id=637299903277586562-2444179625&rd=1).\
+2.2 [Unpacked extension directories from a local machine while in developer mode](https://developer.chrome.com/extensions/getstarted#unpacked).\
 2.3 [Linux installation](https://developer.chrome.com/extensions/linux_hosting).
 
 
